@@ -1,0 +1,11 @@
+{
+    "require": {
+        "zbateson/mail-mime-parser": "^2.2",
+        "google/apiclient": "^2.13",
+        "smalot/pdfparser": "^2.5",
+         "setasign/fpdi": "^2.3",
+        "phpoffice/phpword": "^1.1",
+            "setasign/fpdf": "1.8.*"
+           
+    }
+}
