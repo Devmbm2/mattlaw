@@ -105,6 +105,14 @@ EOHTML;
                 else if($menu_qc == 'email_documents'){
                     $this->params['custom_where'] = " AND plea_pleadings.email_documents =1 ";
                 }
+                else if($menu_qc == 'recently_saved'){
+                    $this->params['custom_where'] = " AND plea_pleadings.assigned_user_id IN (
+                        SELECT ear.bean_id
+                        FROM email_addr_bean_rel ear
+                        INNER JOIN email_addresses ea ON ear.email_address_id = ea.id
+                        WHERE ear.bean_module = 'Users' AND ea.email_address LIKE '%@legacore.com'
+                    )";
+                }
                 
             }
             else{

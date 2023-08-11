@@ -96,7 +96,7 @@ array (
         ),
         'LBL_EDITVIEW_PANEL5' => 
         array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
       ),
@@ -409,7 +409,11 @@ array (
             'comment' => 'Full text of the note',
             'label' => 'LBL_EXPLAIN_W_REASON_C',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'optout_workflows',
+            'label' => 'LBL_OPTOUT_WORKFLOWS',
+          ),
         ),
         2 => 
         array (

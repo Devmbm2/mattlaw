@@ -323,3 +323,42 @@ return false;
 
 
 }
+
+YAHOO.util.Event.addListener(YAHOO.util.Selector.query('#contact_id1_c'), "change", function(){
+	window.client_id=$(this).val();
+	showpopup_equal_client_injuredp($(this).val());
+}); 
+YAHOO.util.Event.addListener(YAHOO.util.Selector.query('#contact_id2_c'), "change", function(){
+	window.injured_id=$(this).val();
+	showpopup_equal_client_injuredp($(this).val());
+});
+
+function showpopup_equal_client_injuredp(id){
+	if (window.client_id === window.injured_id && window.client_id != "" )
+{
+$.ajax({
+		url: 'index.php?module=Cases&action=show_related_workflows_client',
+		type: 'POST',
+		contentType: 'application/x-www-form-urlencoded',
+		dataType: 'text',
+		data: 'sugar_body_only=true',						
+		async: true,			
+		success : function (result){
+		// if(result!='false')
+		// {
+	YAHOO.SUGAR.MessageBox.show({msg: result, height:'700px', width:'200px',title: 'WorkFlows to be Active'});
+		$.LoadingOverlay("hide");
+		// }
+		// else{
+		// 	$.LoadingOverlay("hide");
+		// }
+			
+		}
+	});
+
+}
+	
+
+
+
+}

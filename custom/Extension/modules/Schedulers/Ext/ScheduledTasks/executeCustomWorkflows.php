@@ -4,7 +4,7 @@ function executeCustomWorkflows()
 {
 	require_once('custom/modules/AOW_WorkFlow/ht_AOW_Workflow.php');
 	global $db;
-	$sql = "SELECT id FROM aow_workflow WHERE run_when = 'In_Custom_Scheduler' AND deleted = 0;";
+	$sql = "SELECT id FROM aow_workflow WHERE run_when = 'time_based' AND deleted = 0;";
 	$result = $db->query($sql);
 	while ($row = $db->fetchByAssoc($result)) {
 		$workflow = new ht_AOW_WorkFlow();

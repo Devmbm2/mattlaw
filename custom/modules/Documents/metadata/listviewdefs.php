@@ -16,6 +16,16 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'RELATED_CASE_ASSIGNED_TO' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CASE_ASSIGNED_TO',
+    'link' => true,
+    'width' => '10%',
+    'sortable' => false,
+  ),
   'CASES_DOCUMENTS_NAME' => 
   array (
     'default' => true,
@@ -67,16 +77,6 @@ array (
       3 => 'doc_url',
     ),
   ),
-  'RELATED_CASE_ASSIGNED_TO' => 
-  array (
-    'type' => 'relate',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CASE_ASSIGNED_TO',
-    'link' => true,
-    'width' => '10%',
-    'sortable' => false,
-  ),
   'RELATED_CASE_ASSISTANT' => 
   array (
     'type' => 'varchar',
@@ -86,13 +86,6 @@ array (
     'width' => '10%',
     'source' => 'non-db',
     'sortable' => false,
-  ),
-  'OUTGOING_DOCUMENT' => 
-  array (
-    'type' => 'bool',
-    'width' => '15%',
-    'label' => 'LBL_OUTGOING_DOCUMENT',
-    'default' => true,
   ),
   'CATEGORY_ID' => 
   array (

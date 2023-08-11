@@ -1,4 +1,7 @@
-<?php 
+<?php
+$job_strings[] = 'assignworkflow';
+function assignworkflow()
+{	
 	global $db;
 	$sql = "SELECT * FROM aow_workflow WHERE deleted = 0";
 	$result = $db->query($sql);
@@ -21,3 +24,6 @@
 			$workflowbean->save();
 		}
 	}
+	return true;
+}
+

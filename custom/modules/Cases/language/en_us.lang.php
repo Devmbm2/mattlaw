@@ -1,5 +1,5 @@
 <?php
-// created: 2023-07-03 12:49:49
+// created: 2023-08-02 11:59:00
 $mod_strings = array (
   'LBL_ACCOUNT_NAME' => 'Organization Name:',
   'LBL_ACCOUNT_ID' => 'Organization ID',
@@ -289,4 +289,5 @@ $mod_strings = array (
   'LBL_EDITVIEW_PANEL7' => 'workflow exception description',
   'LBL_EDITVIEW_PANEL8' => 'workflow exception details',
   'LBL_CASES_HT_DAMAGES_HT' => 'Damages',
+  'LBL_EDITVIEW_PANEL9' => 'Workflow status',
 );

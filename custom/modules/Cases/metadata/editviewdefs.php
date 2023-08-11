@@ -45,6 +45,10 @@ array (
         array (
           'file' => 'cache/include/javascript/sugar_grp_yui_widgets.js',
         ),
+        8 => 
+        array (
+          'file' => 'custom/include/javascript/visible/workflow_status.js',
+        ),
       ),
       'useTabs' => true,
       'tabDefs' => 
@@ -89,6 +93,11 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
+        'LBL_EDITVIEW_PANEL9' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
       ),
       'form' => 
       array (
@@ -99,6 +108,7 @@ array (
         ),
         'enctype' => 'multipart/form-data',
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -573,6 +583,46 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_WORKFLOW_EXCEPTION_DETAILS',
           ),
+        ),
+      ),
+      'lbl_editview_panel9' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'workflow_end_status_c',
+            'label' => 'LBL_WORKFLOW_END_STATUS_C',
+          ),
+          1 => 
+          array (
+            'name' => 'workflow_reason_c',
+            'label' => 'LBL_WORKFLOW_REASON_C',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'explain_w_reason_c',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_EXPLAIN_W_REASON_C',
+          ),
+          1 => 
+          array (
+            'name' => 'optout_workflows',
+            'label' => 'LBL_OPTOUT_WORKFLOWS',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'why_opt_out_c',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_WHY_OPT_OUT_C',
+          ),
+          1 => '',
         ),
       ),
     ),

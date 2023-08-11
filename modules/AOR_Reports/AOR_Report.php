@@ -152,7 +152,7 @@ class AOR_Report extends Basic
         $app_list_strings['aor_moduleList'] = $app_list_strings['moduleList'];
 
         foreach ($app_list_strings['aor_moduleList'] as $mkey => $mvalue) {
-            if (!isset($beanList[$mkey]) || str_begin($mkey, 'AOR_') || str_begin($mkey, 'AOW_')) {
+            if (!isset($beanList[$mkey]) || str_begin($mkey, 'AOR_') || (str_begin($mkey, 'AOW_') && $mkey!='AOW_WorkFlow')) {
                 unset($app_list_strings['aor_moduleList'][$mkey]);
             }
         }

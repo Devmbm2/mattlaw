@@ -58,26 +58,39 @@ $subpanel_layout = array(
 		),
 		'default' => true,
 		),
-		'case_assigned_to_c' => 
-		array (
+ 'cases_documents_name' => 
+		 array (
 		'type' => 'relate',
-		'default' => true,
-		'studio' => 'visible',
-		'vname' => 'LBL_CASE_ASSIGNED_TO',
-		'id' => 'USER_ID_C',
-		'link' => true,
-		'width' => '10%',
-		'widget_class' => 'SubPanelDetailViewLink',
-		'target_module' => 'Users',
-		'target_record_key' => 'user_id_c',
-		),
-		'done_c' => 
-		array (
-		'type' => 'bool',
-		'default' => true,
-		'vname' => 'LBL_DONE',
-		'width' => '10%',
-		),
+		'source' => 'non-db',
+		'vname' => 'LBL_CASES',
+		'save' => true,
+		'id_name' => 'case_id',
+		'link' => 'documents_cases',
+		'table' => 'cases',
+		'module' => 'Cases',
+		'rname' => 'name',
+		// 'required' => true,
+	),
+		// 'case_assigned_to_c' => 
+		// array (
+		// 'type' => 'relate',
+		// 'default' => true,
+		// 'studio' => 'visible',
+		// 'vname' => 'LBL_CASE_ASSIGNED_TO',
+		// 'id' => 'USER_ID_C',
+		// 'link' => true,
+		// 'width' => '10%',
+		// 'widget_class' => 'SubPanelDetailViewLink',
+		// 'target_module' => 'Users',
+		// 'target_record_key' => 'user_id_c',
+		// ),
+		// 'done_c' => 
+		// array (
+		// 'type' => 'bool',
+		// 'default' => true,
+		// 'vname' => 'LBL_DONE',
+		// 'width' => '10%',
+		// ),
 		'edit_button' => 
 		array (
 		'vname' => 'LBL_EDIT_BUTTON',

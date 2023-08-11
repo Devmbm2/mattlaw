@@ -38,6 +38,7 @@ $hook_array['after_relationship_delete'][] = Array(77, 'deleteRelationship', 'mo
 $hook_array['after_ui_frame'] = Array();
 $hook_array['after_ui_frame'][] = Array(1002, 'Document Templates after_ui_frame Hook', 'custom/modules/Cases/DHA_DocumentTemplatesHooks.php','DHA_DocumentTemplatesCasesHook_class', 'after_ui_frame_method');
 $hook_array['before_save'][] = Array(2, 'WorkFlow Will run on changing the status', 'custom/modules/Cases/controller.php','CustomCasesController', 'RunFunctionOnChangingStatus');
+$hook_array['after_save'][] = Array(177, 'update the workflow opt out status', 'custom/modules/Cases/update_opt_out_status.php','UpdateStatus', 'update_opt_out_status');
 
 
 

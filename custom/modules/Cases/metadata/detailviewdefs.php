@@ -19,12 +19,12 @@ array (
           4 => 
           array (
             'customCode' => '<input type="button" onclick="window.open(\'index.php?&module=Cases&action=client_costs_to_be_paid&record={$fields.id.value}\')" target="_blank" target="_blank" value="CLIENT COSTS TO BE PAID" />',
-          ), 
-		  5 => 
+          ),
+          5 => 
           array (
             'customCode' => '<input type="button" onclick="window.open(\'index.php?&module=Cases&action=client_costs_waived&record={$fields.id.value}\')" target="_blank" target="_blank" value="CLIENT COSTS WAIVED" />',
           ),
-		  6 => 
+          6 => 
           array (
             'customCode' => '<input type="button" onclick="show_case_related_events_report(\'{$fields.id.value}\');" target="_blank" value="Events Report" />',
           ),
@@ -49,11 +49,11 @@ array (
           array (
             'customCode' => '<input type="button" onclick="show_related_module_files_zip_menu();" target="_blank" value="Download Related Module Files AS Zip" />',
           ),
-		  9 => 
+          9 => 
           array (
             'customCode' => '<input type="button" onclick="send_document_to_sign();" target="_blank" value="Send Document to Sign" />',
           ),
-      10 => 
+          10 => 
           array (
             'customCode' => '<input type="button" onclick="show_case_related_damages_report(\'{$fields.id.value}\');" target="_blank" value="Damages Report" />',
           ),
@@ -79,21 +79,22 @@ array (
       ),
       'includes' => 
       array (
-        // array (
-        //    'file' => 'custom/modules/Cases/js/genericdetail_case.js',
-        //      ),
-          array (
-           'file' => 'custom/modules/Cases/js/form-builder.js',
-             ),
-          array (
-           'file' => 'custom/modules/Cases/js/form-render.js',
-             ),
-          array (
-           'file' => 'custom/modules/Cases/js/main.js',
-             ),
-            array (
-             'file' => 'custom/modules/Cases/js/ht_formbuilder_utils.js',
-              ),
+        0 => 
+        array (
+          'file' => 'custom/modules/Cases/js/form-builder.js',
+        ),
+        1 => 
+        array (
+          'file' => 'custom/modules/Cases/js/form-render.js',
+        ),
+        2 => 
+        array (
+          'file' => 'custom/modules/Cases/js/main.js',
+        ),
+        3 => 
+        array (
+          'file' => 'custom/modules/Cases/js/ht_formbuilder_utils.js',
+        ),
       ),
       'useTabs' => true,
       'tabDefs' => 
@@ -103,52 +104,48 @@ array (
           'newTab' => true,
           'panelDefault' => 'expanded',
         ),
-        'LBL_DETAILVIEW_PANEL6' => 
+        'LBL_EDITVIEW_PANEL5' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
-        'LBL_DETAILVIEW_PANEL7' => 
+        'LBL_EDITVIEW_PANEL6' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
-        'LBL_DETAILVIEW_PANEL4' => 
+        'LBL_EDITVIEW_PANEL4' => 
         array (
           'newTab' => true,
           'panelDefault' => 'expanded',
         ),
-        'LBL_DETAILVIEW_PANEL1' => 
+        'LBL_EDITVIEW_PANEL1' => 
         array (
           'newTab' => true,
           'panelDefault' => 'expanded',
         ),
-        'LBL_DETAILVIEW_PANEL5' => 
+        'LBL_EDITVIEW_PANEL2' => 
         array (
           'newTab' => true,
           'panelDefault' => 'expanded',
         ),
-        'LBL_DETAILVIEW_PANEL2' => 
+        'LBL_RESOLUTION_STRATEGY_PANEL' => 
+        array (
+          'newTab' => true,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL8' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
-		'LBL_RESOLUTION_STRATEGY_PANEL' => 
+        'LBL_EDITVIEW_PANEL9' => 
         array (
-          'newTab' => true,
-          'panelDefault' => 'expanded',
-        ),
-        'LBL_DETAILVIEW_PANEL3' => 
-        array (
-          'newTab' => true,
-          'panelDefault' => 'expanded',
-        ),
-        'LBL_DETAILVIEW_PANEL8' => 
-        array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -189,16 +186,27 @@ array (
         ),
         3 => 
         array (
-          0 => 'type',
-          1 => 
+          0 => 
           array (
             'name' => 'representation_capacity_c',
             'studio' => 'visible',
             'label' => 'LBL_REPRESENTATION_CAPACITY',
           ),
         ),
+        4 => 
+        array (
+          0 => 'type',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description_short_c',
+            'label' => 'LBL_DESCRIPTION_SHORT',
+          ),
+        ),
       ),
-      'lbl_detailview_panel6' => 
+      'lbl_editview_panel5' => 
       array (
         0 => 
         array (
@@ -228,7 +236,7 @@ array (
           ),
         ),
       ),
-      'lbl_detailview_panel7' => 
+      'lbl_editview_panel6' => 
       array (
         0 => 
         array (
@@ -263,12 +271,21 @@ array (
         array (
           0 => 
           array (
+            'name' => 'number_potential_plaintif_c',
+            'studio' => 'visible',
+            'label' => 'LBL_NUMBER_POTENTIAL_PLAINTIF',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
             'name' => 'case_description_c',
             'studio' => 'visible',
             'label' => 'LBL_CASE_DESCRIPTION',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -277,7 +294,7 @@ array (
             'label' => 'LBL_LIABILITY_DESCRIPTION',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -286,7 +303,7 @@ array (
             'label' => 'LBL_DAMAGES_DESCRIPTION',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -294,14 +311,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_POLICE',
           ),
-          1 => 
-          array (
-            'name' => 'number_potential_plaintif_c',
-            'studio' => 'visible',
-            'label' => 'LBL_NUMBER_POTENTIAL_PLAINTIF',
-          ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -314,17 +325,12 @@ array (
             'label' => 'LBL_STATUTE_OF_LIMITATIONS',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
             'name' => 'location_of_incident_c',
             'label' => 'LBL_LOCATION_OF_INCIDENT',
-			// 'type' => 'LocationAddress',
-   //          'displayParams' => 
-   //          array (
-   //            'key' => 'location',
-   //          ),
           ),
           1 => 
           array (
@@ -332,23 +338,17 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_COUNTY_OF_INCIDENT',
           ),
-          
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
             'name' => 'state_of_incident',
             'label' => 'LBL_STATE_OF_INCIDENT',
           ),
-          
-          1 => 
-          array (
-            'name' => 'created_by_name',
-            'label' => 'LBL_CREATED',
-          ),
+          1 => '',
         ),
-		  9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -358,7 +358,7 @@ array (
           1 => 'default_assistant_lawyer_name',
         ),
       ),
-      'lbl_detailview_panel4' => 
+      'lbl_editview_panel4' => 
       array (
         0 => 
         array (
@@ -390,22 +390,8 @@ array (
             'label' => 'LBL_REFERRAL_ATTORNEY',
           ),
         ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'label' => 'LBL_DATE_MODIFIED',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-          ),
-        ),
       ),
-      'lbl_detailview_panel1' => 
+      'lbl_editview_panel1' => 
       array (
         0 => 
         array (
@@ -530,80 +516,42 @@ array (
             'label' => 'LBL_COS',
           ),
         ),
-        10 => 
-        array (
-          0 => 
-          array (
-            'name' => 'defandant_tab',
-            'label' => 'LBL_DEFANDANT_TAB',
-            'customCode' => '{$DEFANDANTS}',
-          ),
-        ),
       ),
-      'lbl_detailview_panel5' => 
+      'lbl_editview_panel2' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            'name' => 'total_insurance_available_c',
-            'label' => 'LBL_TOTAL_INSURANCE_AVAILABLE',
+            'name' => 'mdp_estimated_case_value_c',
+            'label' => 'LBL_MDP_ESTIMATED_CASE_VALUE',
           ),
           1 => 
           array (
-            'name' => 'total_um_available_c',
-            'label' => 'LBL_TOTAL_UM_AVAILABLE',
+            'name' => 'amount_to_calc_closing_c',
+            'label' => 'LBL_AMOUNT_TO_CALC_CLOSING',
           ),
         ),
         1 => 
         array (
           0 => 
-          array (
-            'name' => 'total_recovered_c',
-            'label' => 'LBL_TOTAL_RECOVERED',
-          ),
-          1 => 
-          array (
-            'name' => 'mdp_estimated_case_value_c',
-            'label' => 'LBL_MDP_ESTIMATED_CASE_VALUE',
-          ),
-        ),
-      ),
-      'lbl_detailview_panel2' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            'name' => 'amount_to_calc_closing_c',
-            'label' => 'LBL_AMOUNT_TO_CALC_CLOSING',
-          ),
-          1 => 
           array (
             'name' => 'fee_percentage_c',
             'studio' => 'visible',
             'label' => 'LBL_FEE_PERCENTAGE',
           ),
-        ),
-        1 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'firm_fee_c',
             'label' => 'LBL_FIRM_FEE',
-          ),
-          1 => 
-          array (
-            'name' => 'referral_fee_c',
-            'label' => 'LBL_REFERRAL_FEE',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'total_costs_c',
-            'label' => 'LBL_TOTAL_COSTS',
+            'name' => 'referral_fee_c',
+            'label' => 'LBL_REFERRAL_FEE',
           ),
           1 => 
           array (
@@ -611,34 +559,8 @@ array (
             'label' => 'LBL_COST_HOLD_BACK',
           ),
         ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'costs_plus_holdback_c',
-            'label' => 'LBL_COSTS_PLUS_HOLDBACK',
-          ),
-          1 => 
-          array (
-            'name' => 'total_medical_bills_c',
-            'label' => 'LBL_TOTAL_MEDICAL_BILLS',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'total_lops_liens_c',
-            'label' => 'LBL_TOTAL_LOPS_LIENS',
-          ),
-          1 => 
-          array (
-            'name' => 'total_to_client_c',
-            'label' => 'LBL_TOTAL_TO_CLIENT',
-          ),
-        ),
       ),
-	  'lbl_resolution_strategy_panel' => 
+      'lbl_resolution_strategy_panel' => 
       array (
         0 => 
         array (
@@ -649,226 +571,65 @@ array (
           ),
         ),
       ),
-	  'lbl_detailview_panel8' => 
+      'lbl_editview_panel8' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            'name' => 'questioner',
-            'label' => 'LBL_FAQS_FORM',
-          ),
-        ),
-      ),
-      'lbl_detailview_panel3' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_presuit_1_c',
-            'label' => 'LBL_DAYS_PRESUIT_1',
-          ),
-          1 => 
-          array (
-            'name' => 'days_presuit_2_c',
-            'label' => 'LBL_DAYS_PRESUIT_2',
+            'name' => 'exception_details_c',
+            'label' => 'LBL_EXCEPTION_DETAILS_C',
           ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'days_presuit_3_c',
-            'label' => 'LBL_DAYS_PRESUIT_3',
+            'name' => 'workflow_exception_details_c',
+            'comment' => 'Full text of the note',
+            'studio' => 'visible',
+            'label' => 'LBL_WORKFLOW_EXCEPTION_DETAILS',
+          ),
+        ),
+      ),
+      'lbl_editview_panel9' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'workflow_end_status_c',
+            'label' => 'LBL_WORKFLOW_END_STATUS_C',
           ),
           1 => 
           array (
-            'name' => 'days_presuit_4_c',
-            'label' => 'LBL_DAYS_PRESUIT_4',
+            'name' => 'workflow_reason_c',
+            'label' => 'LBL_WORKFLOW_REASON_C',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'explain_w_reason_c',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_EXPLAIN_W_REASON_C',
+          ),
+          1 => 
+          array (
+            'name' => 'optout_workflows',
+            'label' => 'LBL_OPTOUT_WORKFLOWS',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'days_presuit_5_c',
-            'label' => 'LBL_DAYS_PRESUIT_5',
+            'name' => 'why_opt_out_c',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_WHY_OPT_OUT_C',
           ),
-          1 => 
-          array (
-            'name' => 'days_presuit_5_1_c',
-            'label' => 'LBL_DAYS_PRESUIT_5_1',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_presuit_5_2_c',
-            'label' => 'LBL_DAYS_PRESUIT_5_2',
-          ),
-          1 => 
-          array (
-            'name' => 'days_presuit_5_3_c',
-            'label' => 'LBL_DAYS_PRESUIT_5_3',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_presuit_5_4_c',
-            'label' => 'LBL_DAYS_PRESUIT_5_4',
-          ),
-          1 => 
-          array (
-            'name' => 'days_presuit_5_5_c',
-            'label' => 'LBL_DAYS_PRESUIT_5_5',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_presuit_6_c',
-            'label' => 'LBL_DAYS_PRESUIT_6',
-          ),
-          1 => 
-          array (
-            'name' => 'days_presuit_6_1_c',
-            'label' => 'LBL_DAYS_PRESUIT_6_1',
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_presuit_6_2_c',
-            'label' => 'LBL_DAYS_PRESUIT_6_2',
-          ),
-          1 => 
-          array (
-            'name' => 'days_presuit_6_3_c',
-            'label' => 'LBL_DAYS_PRESUIT_6_3',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_presuit_6_4_c',
-            'label' => 'LBL_DAYS_PRESUIT_6_4',
-          ),
-          1 => 
-          array (
-            'name' => 'days_presuit_6_5_c',
-            'label' => 'LBL_DAYS_PRESUIT_6_5',
-          ),
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_presuit_6_6_c',
-            'label' => 'LBL_DAYS_PRESUIT_6_6',
-          ),
-          1 => 
-          array (
-            'name' => 'days_lit_1_c',
-            'label' => 'LBL_DAYS_LIT_1',
-          ),
-        ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_lit_2_c',
-            'label' => 'LBL_DAYS_LIT_2',
-          ),
-          1 => 
-          array (
-            'name' => 'days_lit_3_c',
-            'label' => 'LBL_DAYS_LIT_3',
-          ),
-        ),
-        10 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_lit_4_c',
-            'label' => 'LBL_DAYS_LIT_4',
-          ),
-          1 => 
-          array (
-            'name' => 'days_lit_5_c',
-            'label' => 'LBL_DAYS_LIT_5',
-          ),
-        ),
-        11 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_lit_6_c',
-            'label' => 'LBL_DAYS_LIT_6',
-          ),
-          1 => 
-          array (
-            'name' => 'days_lit_7_c',
-            'label' => 'LBL_DAYS_LIT_7',
-          ),
-        ),
-        12 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_lit_8_c',
-            'label' => 'LBL_DAYS_LIT_8',
-          ),
-          1 => 
-          array (
-            'name' => 'days_pending_signed_closed_c',
-            'label' => 'LBL_DAYS_PENDING_SIGNED_CLOSED',
-          ),
-        ),
-        13 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_pending_reductions_c',
-            'label' => 'LBL_DAYS_PENDING_REDUCTIONS',
-          ),
-          1 => 
-          array (
-            'name' => 'days_appeal_pending_c',
-            'label' => 'LBL_DAYS_APPEAL_PENDING',
-          ),
-        ),
-        14 => 
-        array (
-          0 => 
-          array (
-            'name' => 'days_referred_out_c',
-            'label' => 'LBL_DAYS_REFERRED_OUT',
-          ),
-          1 => 
-          array (
-            'name' => 'date_case_closed_c',
-            'label' => 'LBL_DATE_CASE_CLOSED',
-          ),
-        ),
-        15 => 
-        array (
-          0 => 
-          array (
-            'name' => 'total_case_length_c',
-            'label' => 'LBL_TOTAL_CASE_LENGTH',
-          ),
-          1 => 
-          array (
-            'name' => 'med_mal_pre_suit_monitor_c',
-            'label' => 'LBL_MED_MAL_PRE_SUIT_MONITOR',
-          ),
+          1 => '',
         ),
       ),
     ),
